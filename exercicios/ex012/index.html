@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mídia em Vídeo</title>
+    <style>
+      body {
+        background-color: rgb(238, 238, 238);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        text-align: justify;
+        line-height: 1.5em;
+        margin: auto;
+      }
+
+      video {
+        display: block;
+        margin: auto;
+
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        background-color: white;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        max-width: 90%;
+        max-height: 90%;
+        min-width: 100%;
+        min-height: 100%;
+        outline: auto;
+        cursor: pointer;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -moz-outline-radius: 10px;
+        -webkit-outline-radius: 10px;
+      }
+
+      iframe {
+        display: block;
+        margin: auto;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        background-color: white;
+        text-align: center;
+
+        outline: auto;
+        cursor: pointer;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+      }
+
+      body {
+        font: normal 16pt Verdana;
+        text-align: justify;
+        line-height: 1.5em;
+        margin: auto;
+        padding: 10px;
+        border: 1px solid black;
+      }
+      h1 {
+        font: normal 20pt Verdana;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Reproduzindo Vídeo</h1>
+    <p>Vamos aprender a reproduzir vídeos em HTML5 hospeado localmente</p>
+    <video width="700" poster="midia/image/thumbnail.png" controls>
+      <!-- width é o tamanho do video em resolução, poster é p/ criar uma thumnail-->
+
+      <source src="midia/videos/pexels_720.mp4" type="video/mp4" />
+      <source
+        src="midia/videos/pexels_videos_2657261 (1080p).mp4"
+        type="image/mp4"
+      />
+      <p>Seu navegador não tem compatibiliddade com a mídia</p>
+    </video>
+    <!--MP4,WEBM, OGV sao tipos de midia. ogv nao roda em safari-->
+
+    <h1>
+      <p>Inserindo IFrame</p>
+    </h1>
+    <hr />
+
+    <p>Vídeo do Youtube</p>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/yuiXCWk_TwQ?si=_7o9Bu4nImmt4mh-"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+
+    <p>Vídeo do Vimeo</p>
+
+    <iframe
+      src="https://player.vimeo.com/video/517693073?h=495aa323c0"
+      width="640"
+      height="360"
+      frameborder="0"
+      allow="autoplay; fullscreen; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </body>
+</html>

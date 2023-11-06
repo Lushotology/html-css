@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mídias em HTML5</title>
+    <style>
+        body {
+            background-color: rgb(238, 238, 238);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            text-align: justify;
+            line-height: 1.5em;
+            margin: auto;
+        }
+        h1 {
+
+            color: blue;
+            background-color: white;
+            text-align: center;
+            
+        }
+        p {
+            text-align: justify;
+            text-indent: 30px;
+            line-height: 25px;
+
+        }
+        
+    </style>
+  </head>
+  <body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Aqui você vai ver uma imagem dinâmica que vai aparecer quando o seu navegador carrega a página.</p>
+    <p>
+      Tente abrir esta página em vários dispositivos diferentes ou simplesmente
+      aumente e diminua o tamanho do seu navegador.
+    </p>
+    <picture>
+      <source
+        media="(max-width:750px )"
+        srcset="imagens/imagemp.png"
+        type="image/png"
+      />
+      <!--precisa deixar na ordem para poder funcionar corretamente-->
+      <source
+        media="(max-width:1050px)"
+        srcset="imagens/imagemm.png"
+        type="image/png"
+      />
+      <img src="imagens/imagemg.png" alt="imagem flexivel" />
+      <!--por padrao, vem min-width, mas é melhor usar max-->
+
+
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio src="midia/ghost.MP3"  controls  ></audio>
+
+
+    <audio preload="metadata"  controls>
+        <source src="midia/master-solo.mp3" type="audio/mp3">
+        <p>Teste</p>
+
+        
+
+    </audio>
+
+
+  </body>
+
+</html>

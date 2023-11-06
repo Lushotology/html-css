@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meus Vídeos</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      body {
+        text-align: center;
+        background: rgb(140, 153, 228);
+        font: normal 20px Verdana;
+        color: rgb(0, 0, 0);
+      }
+
+      /*img#para{
+        display: block;
+        margin: auto;
+        text-align: center;
+        width: 500px;
+        height: 300px;
+        border-radius: 5%;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        transition: 0.5s;
+        cursor: pointer;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        margin-left: 200px;
+
+        margin-right: 200px;
+
+
+
+      }*/
+
+      .video-container {
+
+        display: inline;
+        
+
+
+
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .video:hover{
+        box-shadow: 2px 2px 2px black;
+
+      }
+        
+      .video {
+        
+        position: relative;
+
+        display: inline-block;
+
+        margin: auto;
+        text-align: center;
+        width: 500px;
+        height: 300px;
+        border-radius: 5%;
+
+        transition: 0.5s;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <p>Vídeos recomendados!</p>
+    </h1>
+
+    <div class="video-container">
+      <a class="video" href="page_videos/page1.html" target="_self"
+        ><img src="midia/image/egg.png" alt="egg video" width="500"
+      /></a>
+
+      <a class="video" href="page_videos/page2.html" target="_self"
+        ><img
+          src="midia/image/loneliness.png"
+          alt="loneliness video"
+          width="500"
+      /></a>
+      
+      <a class="video" href="page_videos/page4.html" target="_self"
+        ><img src="midia/image/system.png" alt="system video" width="500"
+      /></a>
+
+      <a class="video" href="page_videos/page3.html" target="_self"
+        ><img src="midia/image/paradox.png" alt="paradox video" width="500"
+      /></a>
+    </div>
+
+    
+    
+
+
+  </body>
+
+  
+
+</html>

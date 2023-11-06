@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo-Classes</title>
+
+    <style>
+        div {
+        
+        background-color: lightgray;
+        border: 1px solid black;
+        height: 200px;
+        width: 200px;
+        
+        
+
+      }
+
+      div#d2 > p {
+        display: none;
+      }
+
+      div#d2:hover > p{
+        display:block;
+        color: white;
+        background-color: black;
+        height: auto;
+        width: auto;
+        
+
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+
+
+
+        
+        
+
+      }
+
+      div:hover{ /* hover significa = quando passar o mouse por cima*/
+        background-color: rgb(226, 240, 30);
+      }
+
+
+
+    
+    </style>
+  </head>
+  <body>
+    <div id="d1">01
+      
+    </div>
+    <div id="d2">02
+      <p>Armas</p>
+      <p>Escudos</p>
+    </div>
+    <div id="d3">03</div>
+  </body>
+</html>
+
+

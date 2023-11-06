@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+
+
+        }
+
+        nav{
+            background-color: rgb(145, 144, 143);
+
+            padding: 3px;
+            width: auto;
+            height: auto;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.37);
+            /*tem que ser uma sombra com transparência */
+            
+            
+
+
+
+        }
+
+        nav>a{
+            text-decoration: none;
+            color: wheat;
+            font-weight: bold;
+            margin-right: 30px;
+            
+
+        }
+
+        main{
+            border-radius: 10px 0px;
+
+            
+
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.37);
+
+            
+
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            
+
+        }
+
+        article{
+            background-color: lightgray;
+            padding: 10px;
+
+        }
+
+        article > aside{ /*este seletor aplicar o estilo aos elementos ASIDE que estão dentro do elemento ARTICLE */
+
+            background-color: rgb(63, 60, 60);
+            color: white;
+            
+
+           
+
+
+
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            padding: 1px;
+            margin: 1px;
+            text-align: center;
+
+
+            
+        }
+
+        footer > p
+        {
+            margin: 0px;
+        }
+
+        div#bola{
+            height: 100px;   
+            width: 100px;
+            background-color: rgb(255, 255, 255);
+            margin: 10px;
+            border-radius: 50%; /*50% pra ficar uma bola */
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.37);
+
+
+        }
+    </style>
+
+</head>
+<body>
+    
+    <header>
+        <h1>Meu site</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                    
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+        <section id="assuntos"></section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo veritatis sunt distinctio reiciendis perferendis porro mollitia adipisci placeat omnis repudiandae animi, fugiat voluptate? Voluptate quaerat placeat vero maxime saepe tempora?</p>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque deserunt maxime, ab earum facere harum accusantium voluptates cumque tenetur ullam laudantium molestias suscipit exercitationem ipsum. Alias, fugit! Rem, impedit molestiae.</p>
+                <aside>
+                    <p>Artigo escrito por Lush</p>
+                </aside>
+
+            </article>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>Desenvoldo por Lushoverso.Todos os direitos reservados</p>
+        
+
+
+
+
+    </footer>
+    <div id="bola"></div>
+
+</body>
+</html>
