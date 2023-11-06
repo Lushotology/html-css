@@ -31,7 +31,8 @@
   --fonte-android: "Android", Arial;
 }
 
-* { /*forma global  para formato */
+* {
+  /*forma global  para formato */
   margin: 0px;
   padding: 0px;
 }
@@ -41,8 +42,8 @@ body {
   font-family: var(--fonte-padrao);
 }
 
-a.externo::after{
-  content: '\00A0\1F517';
+a.externo::after {
+  content: "\00A0\1F517";
 }
 
 header {
@@ -87,7 +88,6 @@ nav > a {
   border-radius: 5px;
   transition-duration: 0.35s;
   margin-bottom: 20px;
-
 }
 
 nav > a:hover {
@@ -108,15 +108,11 @@ main {
   border-bottom-right-radius: 10px;
 }
 
-
-
 main h1 {
   color: var(--cor5);
   font-family: var(--fonte-android);
   font-size: 1.8em;
   font-weight: normal;
-  
-
 }
 
 main h2 {
@@ -125,7 +121,6 @@ main h2 {
   font-size: 1.3em;
   background-image: linear-gradient(to right, var(--cor1), transparent);
   font-weight: normal;
-
 }
 
 main img {
@@ -164,7 +159,7 @@ main img.pequena {
   margin: auto;
 }
 
-div.video{
+div.video {
   background-color: var(--cor5);
   margin: 0px -20px 30px -20px;
   padding: 20px;
@@ -173,16 +168,12 @@ div.video{
   position: relative;
 }
 
-div.video > iframe{
+div.video > iframe {
   position: absolute;
   top: 5%;
   left: 5%;
   width: 90%;
   height: 90%;
-
-
-
-
 }
 
 aside {
@@ -223,7 +214,4 @@ footer a {
 footer a:hover {
   color: var(--cor2);
   text-decoration: underline;
-  
 }
-
-
