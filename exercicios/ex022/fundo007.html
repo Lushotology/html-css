@@ -1,48 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alinhamento vertical</title>
     <style>
-        #container{
+      #container {
+        position: relative;
 
-            position: relative;
+        height: 96vh;
+        padding: 10px;
+        background-color: purple !important;
+        background-image: url("imagens/target001.png");
+        background-size: 100% 100%;
+      }
+      /**dsdsdsds
+      *TODO: Removedsdsdsd
+      *!</style> dsdsds
+      *?</head>
+      *
 
-            height: 96vh;
-            padding: 10px;
-            background-color: purple !important;
-            background-image: url('imagens/target001.png');
-            background-size: 100% 100%;
+      */
+      #conteudo {
+        position: absolute; 
+        
+        left: 50%;
+        top: 50%;
+        padding: ();
 
-
-
-        }
-
-
-        #conteudo{
-            position: absolute;
-            left: 50%;
-            top: 50%;
-
-            height: 200px;
-            width: 200px;
-            background-color: yellow;
-            background-image: url('imagens/target001.png');
-            background-size: 100% 100%;
-            transform: translate(-50%, -50%) !important;
-
-
-
-        }
+        height: 200px;
+        width: 200px;
+        background-color: yellow;
+        background-image: url("imagens/target001.png");
+        background-size: 100% 100%;
+        transform: translate(-50%, -50%) !important;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <section id="container">
-        <article id="conteudo">
-
-        </article>
+      <article id="conteudo"></article>
     </section>
-    
-</body>
-</html>
+  </body>
+</html> 
