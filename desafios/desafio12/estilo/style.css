@@ -1,0 +1,3 @@
+section > pre {
+    white-space: pre-line; /*isso é uma opção melhor do que usar <br> em cada linha
+}
