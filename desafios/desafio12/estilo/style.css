@@ -1,36 +1,83 @@
 @charset "utf-8";
 
-
-*{
-    margin: 0;
-    padding: 0px;
+* {
+  margin: 0;
+  padding: 0px;
 }
 
-html, body {
-    min-height: 100%;
-    background-color: darkgrey;
-
+html,
+body {
+  min-height: 100%;
+  background-color: darkgrey;
 }
 
 header {
-    background-color: black;
-    color: white;
-        
-
+  background-color: black;
+  color: white;
 }
 
 section > pre {
-    white-space: pre-line; /*isso é uma opção melhor do que usar <br> em cada linha */
+  white-space: pre-line; /*!isso é uma opção melhor do que usar <br> em cada linha */
 }
 
 header > h1 {
-    padding-top: 10px;
-    
+  padding-top: 50px;
+  font-variant: small-caps;
+
+  /*? text-transform: uppercase; */
 }
 
-a { 
-    text-decoration: none;
-    color: #551A8B;
+header > p {
+  padding-bottom: 50px;
+}
+
+header a,
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bolder;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: rgb(91, 19, 158);
+}
 
 
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em; /*determina a altura da linha, se for maior que o te8xto, vai ter um espaço extra acima e abaixo do texto.   */
+    padding-left: 30px;
+
+
+
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+
+}
+
+section.imagem{
+    background-color: rgb(22, 13, 13);
+    color: white;
+
+}
+
+section.imagem > pre > p {
+    width: 400px;
+    background-color: rgba(226, 204, 9, 0.39)
+
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
 }
