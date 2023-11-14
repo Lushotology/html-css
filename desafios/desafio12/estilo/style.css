@@ -1,3 +1,36 @@
+@charset "utf-8";
+
+
+*{
+    margin: 0;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100%;
+    background-color: darkgrey;
+
+}
+
+header {
+    background-color: black;
+    color: white;
+        
+
+}
+
 section > pre {
-    white-space: pre-line; /*isso é uma opção melhor do que usar <br> em cada linha
+    white-space: pre-line; /*isso é uma opção melhor do que usar <br> em cada linha */
+}
+
+header > h1 {
+    padding-top: 10px;
+    
+}
+
+a { 
+    text-decoration: none;
+    color: #551A8B;
+
+
 }
