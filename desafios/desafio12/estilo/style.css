@@ -8,12 +8,14 @@
 :root {
   --fonte1: Verdana, Geneva, Tahoma, sans-serif;
   --fonte2: "Passion One", sans-serif;
-  --fonte3: 'Sriracha', cursive;
+  --fonte3: "Sriracha", cursive;
 }
 
 * {
   margin: 0;
   padding: 0px;
+  font-size: 1em;
+
 }
 
 html,
@@ -28,16 +30,14 @@ header {
   color: white;
 }
 
-section > pre {
-  white-space: pre-line; /*!isso é uma opção melhor do que usar <br> em cada linha */
-}
 
-header > h1 {
+header > h1 { /** Cabeçalho */
   padding-top: 50px;
   font-variant: small-caps;
   font-family: var(--fonte2);
   text-align: center;
-
+  font-size: 10vw;
+  
   /*? text-transform: uppercase; */
 }
 
@@ -62,13 +62,21 @@ a:visited {
 }
 
 section {
+  
   padding-top: 10vh;
   padding-bottom: 10vh;
   line-height: 2em; /*determina a altura da linha, se for maior que o te8xto, vai ter um espaço extra acima e abaixo do texto.   */
   padding-left: 30px;
-  font-family: var(--fonte3);
 }
 
+section > pre {
+  white-space: pre-line; /*!isso é uma opção melhor do que usar <br> em cada linha */
+}
+
+pre{
+  font-family: var(--fonte3); /*! foi preciso utilizar font-family na tag de estilo pre ao inves de utilizar na section  */
+  font-size: 2vh;
+}
 section.normal {
   background-color: white;
   color: black;
@@ -80,7 +88,8 @@ section.imagem {
 }
 
 section.imagem > pre > p {
-  width: 400px;
+  display: inline-block;
+  padding: 5px;
   background-color: rgba(226, 204, 9, 0.39);
 }
 
@@ -89,4 +98,5 @@ footer {
   color: white;
   text-align: center;
   padding: 10px;
+  font-family: var(--fonte1);
 }
