@@ -1,5 +1,16 @@
 @charset "utf-8";
 
+@import url("https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap"); /* font-family: 'Passion One', sans-serif; */
+
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
+/*font-family: 'Sriracha', cursive; */
+
+:root {
+  --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+  --fonte2: "Passion One", sans-serif;
+  --fonte3: 'Sriracha', cursive;
+}
+
 * {
   margin: 0;
   padding: 0px;
@@ -9,6 +20,7 @@ html,
 body {
   min-height: 100%;
   background-color: darkgrey;
+  font-family: var(--fonte1);
 }
 
 header {
@@ -23,12 +35,15 @@ section > pre {
 header > h1 {
   padding-top: 50px;
   font-variant: small-caps;
+  font-family: var(--fonte2);
+  text-align: center;
 
   /*? text-transform: uppercase; */
 }
 
 header > p {
   padding-bottom: 50px;
+  text-align: center;
 }
 
 header a,
@@ -46,33 +61,27 @@ a:visited {
   color: rgb(91, 19, 158);
 }
 
-
 section {
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    line-height: 2em; /*determina a altura da linha, se for maior que o te8xto, vai ter um espaço extra acima e abaixo do texto.   */
-    padding-left: 30px;
-
-
-
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  line-height: 2em; /*determina a altura da linha, se for maior que o te8xto, vai ter um espaço extra acima e abaixo do texto.   */
+  padding-left: 30px;
+  font-family: var(--fonte3);
 }
 
-section.normal{
-    background-color: white;
-    color: black;
-
+section.normal {
+  background-color: white;
+  color: black;
 }
 
-section.imagem{
-    background-color: rgb(22, 13, 13);
-    color: white;
-
+section.imagem {
+  background-color: rgb(22, 13, 13);
+  color: white;
 }
 
 section.imagem > pre > p {
-    width: 400px;
-    background-color: rgba(226, 204, 9, 0.39)
-
+  width: 400px;
+  background-color: rgba(226, 204, 9, 0.39);
 }
 
 footer {
