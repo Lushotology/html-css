@@ -28,9 +28,26 @@
             color: antiquewhite;
         }
 
-        td:nth-child(2) { /* provsorio para alinhas os dados de pop à direita*/
+        td:nth-child(2n) { /* provsorio para alinhas os dados de pop à direita*/
             text-align: right;
         }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+
+
+        }
+
+       tbody > tr:nth-child(odd){ /*Pode ser odd, even, ou mesmo Xn, onde X é um numero por exemplo: 2n*/
+        background-color: lightgray;
+       } 
+
+       tbody > tr:nth-child(even) {
+        background-color: white;        
+       }
         
 
     </style>
@@ -40,6 +57,7 @@
     <!--
         ANATOMIA PARA TABELAS
         TABLE
+            CAPTION (LEGENDA)
             THEAD (CABEÇA)
                 TR, TD, TH
             TBODY
@@ -47,18 +65,21 @@
             TFOOT (RODAPÉ)
                 TR, TD, TH
 
-
+        th =  título (estado, populaçao etc)
+        td = dado (sao paulo, minas, 1 milhao)
 
     -->
 
     <table>
         <thead>
             <tr>
-                <th>Estado</th> <!--*TH É PRA TITULOS, TD É P/ DADOS-->
-                <th>População</th>
+                <th scope="col">Estado</th> <!--*TH É PRA TITULOS, TD É P/ DADOS-->
+                <th scope="col" style="width: 50px;">População</th>
+                <!--*scope col/row serve pra ajudar no sistema de pesquisas tipo google e afins-->
             </tr>
         </thead>
-
+        <caption>População das Unidades Federativas</caption>
+        
         <tbody>
             <tr>
                 <td>São Paulo</td>
@@ -171,14 +192,15 @@
         </tbody>      
         <tfoot>
             <tr>
-                <td>Total de Habitantes</td>
+               
+                <th scope="row">Total de Habitantes</th>
                 <td>0000</td>
             </tr>
         </tfoot>
     </table>
-
     
-
+    
+    
     
 </body>
 </html>
