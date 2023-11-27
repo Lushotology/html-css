@@ -13,6 +13,8 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+
 
 
         }
@@ -26,6 +28,12 @@
         thead,tfoot {
             background-color: gray;
             color: antiquewhite;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+
         }
 
         td:nth-child(2n) { /* provsorio para alinhas os dados de pop à direita*/
